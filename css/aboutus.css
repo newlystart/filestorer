@@ -1,0 +1,339 @@
+/* 了解文储 */
+.brief {
+    width: 1200px;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 59px;
+    margin-bottom: 30px;
+}
+
+.brief .brief-titlet h2 {
+    font-size: 85px;
+    color: #666666;
+    font-family: DINCond-Black;
+    opacity: 0.14;
+}
+
+.brief .brief-titlet span {
+    font-size: 30px;
+    color: #333333;
+    font-family: SourceHanSansSC-Bold;
+    font-weight: bold;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    margin-left: -65px;
+}
+
+.brief dl {
+    display: flex;
+}
+
+.brief dl dd {
+    flex: 0 0 25%;
+    height: 166px;
+    border-right: 1px solid #D3D0D0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 55px;
+}
+
+.brief dl dd:last-child {
+    border-right: none;
+}
+
+.brief dl dd h3,
+.brief dl dd .brief-titlet-number {
+    font-size: 48px;
+    font-family: SourceHanSansSC-Medium;
+    display: inline-block;
+}
+
+.brief dl dd span {
+    font-size: 16px;
+    color: #171719;
+    font-family: SourceHanSansSC-Regular;
+}
+
+.brief-content {
+    font-size: 16px;
+    color: #666666;
+    font-family: SourceHanSansSC-Regular;
+    text-align: left;
+    line-height: 30px;
+    text-indent: 35px;
+}
+
+/* 认识文储 */
+.know {
+    background: #F5F5F8;
+}
+
+.know-center {
+    width: 1200px;
+    margin: auto;
+}
+
+.know .know-titlet {
+    text-align: center;
+    position: relative;
+    margin: auto;
+    margin-top: 37px;
+    margin-bottom: 24px;
+}
+
+.know .know-titlet h2 {
+    font-size: 85px;
+    color: #666666;
+    font-family: DINCond-Black;
+    opacity: 0.14;
+}
+
+.know .know-titlet span {
+    font-size: 30px;
+    color: #333333;
+    font-family: SourceHanSansSC-Bold;
+    font-weight: bold;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    margin-left: -65px;
+}
+
+.know-content {
+    font-size: 16px;
+    color: #666666;
+    font-family: SourceHanSansSC-Regular;
+    text-align: left;
+    line-height: 30px;
+    text-indent: 35px;
+}
+
+.know-list {
+    height: 859px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.know-list .know-list-box {
+    display: flex;
+    width: 100%;
+    position: relative;
+    top: -100px;
+}
+
+.know-list .know-list-box li {
+    /* flex: 0 0 33.333%; */
+    width: 400px;
+    height: 230px;
+    position: relative;
+
+}
+
+.li-hide {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+    font-family: SourceHanSansSC-Bold;
+    font-weight: bold;
+    line-height: 230px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 22;
+}
+
+.li-oshow {
+    position: absolute;
+    top: 20px;
+    width: 400px;
+    height: 0px;
+    line-height: 23px;
+    background: url('../image/know-bj.png') no-repeat center;
+    background-size: 100% 100%;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    overflow: hidden;
+}
+
+.oshow-pic {
+    width: 400px;
+    height: 240px;
+    display: inline-block;
+}
+
+.oshow-conter {
+    color: #ffffff;
+    padding: 0 17px;
+
+}
+
+.oshow-conter h4 {
+    font-size: 24px;
+    text-align: center;
+    font-family: SourceHanSansSC-Bold;
+    font-weight: bold;
+    margin-top: 45px;
+    margin-bottom: 23px;
+}
+
+.oshow-conter span {
+    font-size: 14px;
+    font-family: SourceHanSansSC-Regular;
+    text-indent: 31px;
+    display: inline-block;
+}
+
+.oshow-pic {
+    position: absolute;
+    top: 0px;
+    transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    z-index: 20;
+}
+
+.oshow-pic img {
+    width: 100%;
+}
+
+/* .know-list .know-list-box li:hover .oshow-pic {
+    top: -180px;
+}
+
+.know-list .know-list-box li:hover .li-oshow {
+    padding-top: 115px;
+    height: 420px;
+} */
+
+.show {
+    display: none;
+}
+
+.oshow-pic .hide-pic {
+    position: relative;
+    left: -1px;
+    width: 401px;
+}
+
+/* 事件 */
+.event {
+    /* height: 800px; */
+    background: #ffffff;
+    padding-top: 104px;
+    position: relative;
+}
+
+.event .event-titlet {
+    position: relative;
+}
+
+.event .event-titlet h2 {
+    font-size: 85px;
+    color: #333333;
+    text-align: center;
+    font-family: DINCond-Black;
+    opacity: 0.14;
+}
+
+.event .event-titlet span {
+    font-size: 30px;
+    color: #333333;
+    font-family: SourceHanSansSC-Bold;
+    font-weight: bold;
+    position: absolute;
+    top: 44px;
+    left: 50%;
+    margin-left: -80px;
+}
+
+.event-silder {
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.silder-axis{
+    position: absolute;
+    background: #fff;
+}
+
+.event .event-box {
+    margin-left: 8px;
+    border-left: 1px solid #00A0E9;
+    margin-bottom: 70px;
+}
+
+.event-box-list {
+    padding-left: 25px;
+    position: relative;
+}
+
+.event-box-list h5 {
+    font-size: 24px;
+    color: #666666;
+    font-family: DINCond-Black;
+    margin-bottom: 21px;
+}
+.list-top h5{
+    margin: 23px auto;
+}
+.event-box-list h5 i{
+    width:13px;
+    height:13px;
+    border:1px solid rgba(0,160,233,1);
+    display: inline-block;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    left: -8px;
+    top: 10px;
+}
+
+.event .event-box-list p {
+    font-size: 16px;
+    font-family: SourceHanSansSC-Regular;
+    margin-bottom: 12px;
+}
+
+.event-box-list p i {
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 160, 233, 1);
+    border-radius: 50%;
+    margin-right: 20px;
+    display: inline-block;
+}
+.event-box-list p span{
+    width: 35px;
+    margin-right: 20px;
+    display: inline-block;
+}
+.event ol{
+    top: 16.5%;
+    right: 19.5%;
+    cursor: pointer;
+}
+.event ol li{
+    width:60px;
+    height:30px;
+    /* background:rgba(0,160,233,1); */
+    font-size:18px;
+    color: #666666;
+    text-align: center;
+    line-height: 30px;
+    font-family:DINCond-Black;
+    margin-bottom: 15px;
+}
+.event-silder .ol-li-active{
+    color: #ffffff;
+    background:rgba(0,160,233,1);
+}
