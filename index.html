@@ -13,129 +13,6 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/distribute.css">
 </head>
-<script src="./js/jquery.min.js"></script>
-<script src="./js/swiper.jquery.min.js"></script>
-<script src="./js/jquery.lazyload.min.js"></script>
-<script type="text/javascript">
-    function hello() {
-        $('.slide-banner').fadeToggle(2000)
-    }
-    var t2 = window.setInterval("hello()", 1000);
-    $(document).ready(function () {
-        // 图片预加载
-        $("img.banner").lazyload({
-            effect: "fadeIn",
-            placeholder: "./image/loading.jpg",
-        });
-        $("img.logo-loading").lazyload({
-            threshold: 200,
-            effect: "fadeIn",
-            placeholder: "./image/logo-loading.png",
-        });
-        $("img.list-pic").lazyload({
-            threshold: 200,
-            effect: "fadeIn",
-            placeholder: "./image/product-loading.png",
-        });
-        $("img.programme-loading").lazyload({
-            threshold: 200,
-            effect: "fadeIn",
-            placeholder: "./image/programme-loading.png",
-        });
-
-        // 产品
-        var flag = true //设置标识。防止出现跑马灯
-        $('.click-product').click(function () {
-            flag = false
-            var top = $("#product").offset().top; //获取每个banner到顶部的距离
-            $("html,body").stop(true).animate({
-                "scrollTop": top
-            }, function () {
-                flag = true
-            })
-
-        })
-        // 解决方案
-        $('.click-programme').click(function () {
-            flag = false
-            var top = $("#programme").offset().top; //获取每个banner到顶部的距离
-            $("html,body").stop(true).animate({
-                "scrollTop": top
-            }, function () {
-                flag = true
-            })
-
-        })
-        // 轮播图
-        var swiper = new Swiper('.swiper-container', {
-            pagination: '.swiper-pagination',
-            paginationClickable: true,
-            autoplay: 5000,
-            notNextTick: true,
-            initialSlide: 0,
-            setWrapperSize: true,
-            autoplayDisableOnInteraction: false,
-            loop: true,
-            // 没有动画效果
-            // effect: 'fade',
-        });
-        $('.ViInAB').click(function () {
-            window.open('https://viin.se/index.html', '_blank');
-        })
-
-        // 系统
-        $('.tool li').hover(function () {
-            $(this).find('.move').show();
-            $(this).find('.Immobility').hide();
-        }, function () {
-            $(this).find('.move').hide();
-            $(this).find('.Immobility').show();
-        })
-        // 产品
-        $('.product li button').click(function () {
-            $('.product ul li').find('.list-program').slideUp()
-            $(this).siblings('.list-program').slideDown()
-
-        })
-        $('.product ul li').hover(function () {
-            $('.product ul li').find('.list-program').slideUp()
-        })
-        // 底部二维码
-        $('.right-list-public').hover(function () {
-            $('.right-list-public').css('color', '#999')
-            $('.right-list-public').find('.right-list-code').css('display', 'none')
-            $(this).css({
-                'color': '#00A0E9',
-                'cursor': 'pointer'
-            });
-            $(this).find('.right-list-code').css('display', 'flex')
-
-        })
-        // 回到顶部
-        $(window).scroll(function () {
-            if ($(window).scrollTop() > 50) {
-                // $('.header').hide()
-                $("#top_sec").fadeIn(100);
-            } else {
-                // $('.header').show()
-                $("#top_sec").fadeOut(100);
-            }
-        });
-        $("#goPageTop").on("click", function () {
-            $('body,html').animate({
-                scrollTop: 0
-            }, 600);
-            return false;
-        })
-    })
-    var _hmt = _hmt || [];
-    (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?3b38ff04bc01277acd1ed9703d90a8a5";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-    })();
-</script>
 <body>
     <div class="header">
         <div class="info">
@@ -634,6 +511,128 @@
         <a href="#pageTop" id="goPageTop"></a>
     </section>
 </body>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/swiper.jquery.min.js"></script>
+<script src="./js/jquery.lazyload.min.js"></script>
+<script type="text/javascript">
+    function hello() {
+        $('.slide-banner').fadeToggle(2000)
+    }
+    var t2 = window.setInterval("hello()", 1000);
+    $(document).ready(function () {
+        // 图片预加载
+        $("img.banner").lazyload({
+            effect: "fadeIn",
+            placeholder: "./image/loading.jpg",
+        });
+        $("img.logo-loading").lazyload({
+            threshold: 200,
+            effect: "fadeIn",
+            placeholder: "./image/logo-loading.png",
+        });
+        $("img.list-pic").lazyload({
+            threshold: 200,
+            effect: "fadeIn",
+            placeholder: "./image/product-loading.png",
+        });
+        $("img.programme-loading").lazyload({
+            threshold: 200,
+            effect: "fadeIn",
+            placeholder: "./image/programme-loading.png",
+        });
 
+        // 产品
+        var flag = true //设置标识。防止出现跑马灯
+        $('.click-product').click(function () {
+            flag = false
+            var top = $("#product").offset().top; //获取每个banner到顶部的距离
+            $("html,body").stop(true).animate({
+                "scrollTop": top
+            }, function () {
+                flag = true
+            })
+
+        })
+        // 解决方案
+        $('.click-programme').click(function () {
+            flag = false
+            var top = $("#programme").offset().top; //获取每个banner到顶部的距离
+            $("html,body").stop(true).animate({
+                "scrollTop": top
+            }, function () {
+                flag = true
+            })
+
+        })
+        // 轮播图
+        var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 5000,
+            notNextTick: true,
+            initialSlide: 0,
+            setWrapperSize: true,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            // 没有动画效果
+            // effect: 'fade',
+        });
+        $('.ViInAB').click(function () {
+            window.open('https://viin.se/index.html', '_blank');
+        })
+
+        // 系统
+        $('.tool li').hover(function () {
+            $(this).find('.move').show();
+            $(this).find('.Immobility').hide();
+        }, function () {
+            $(this).find('.move').hide();
+            $(this).find('.Immobility').show();
+        })
+        // 产品
+        $('.product li button').click(function () {
+            $('.product ul li').find('.list-program').slideUp()
+            $(this).siblings('.list-program').slideDown()
+
+        })
+        $('.product ul li').hover(function () {
+            $('.product ul li').find('.list-program').slideUp()
+        })
+        // 底部二维码
+        $('.right-list-public').hover(function () {
+            $('.right-list-public').css('color', '#999')
+            $('.right-list-public').find('.right-list-code').css('display', 'none')
+            $(this).css({
+                'color': '#00A0E9',
+                'cursor': 'pointer'
+            });
+            $(this).find('.right-list-code').css('display', 'flex')
+
+        })
+        // 回到顶部
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 50) {
+                // $('.header').hide()
+                $("#top_sec").fadeIn(100);
+            } else {
+                // $('.header').show()
+                $("#top_sec").fadeOut(100);
+            }
+        });
+        $("#goPageTop").on("click", function () {
+            $('body,html').animate({
+                scrollTop: 0
+            }, 600);
+            return false;
+        })
+    })
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?3b38ff04bc01277acd1ed9703d90a8a5";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
 </html>
