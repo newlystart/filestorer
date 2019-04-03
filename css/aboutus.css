@@ -315,7 +315,7 @@
 .event-box-list p span{
     width: 35px;
     margin-right: 20px;
-    display: inline-block;
+    /* display: inline-block; */
 }
 .event ol{
     top: 16.5%;
