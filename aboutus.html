@@ -48,7 +48,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="index-swiper-three">
-                        <h1> VIIN&nbsp;&nbsp;AB&nbsp;&nbsp;&&nbsp;&nbsp;世纪互联</h1>
+                        <h1>文储网络&nbsp;&nbsp;&&nbsp;&nbsp;VIIN&nbsp;&nbsp;AB</h1>
                         <span>了解更多</span>
                     </div>
                     <img data-src="./image/banner03.jpg" class="swiper-lazy">
@@ -390,6 +390,13 @@
         }, function () {
             // $(this).find('.oshow-pic .show').hide()
             // $(this).find('.oshow-pic .hide').show()
+            $(this).find('.oshow-pic .show').hide()
+            $(this).find('.oshow-pic .hide').show()
+            $('.know-list-box li').find('.oshow-pic').css('top', '0px')
+            $('.know-list-box li').find('.li-oshow').css({
+                'padding-top': '0px',
+                'height': '0px'
+            })
         })
         // 底部二维码
         $('.right-list-public').hover(function () {
