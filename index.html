@@ -526,22 +526,25 @@
             effect: "fadeIn",
             placeholder: "./image/loading.jpg",
         });
+        $("img.banner").removeClass("banner");
         $("img.logo-loading").lazyload({
             threshold: 200,
             effect: "fadeIn",
             placeholder: "./image/logo-loading.png",
         });
+        $("img.logo-loading").removeClass("logo-loading");
         $("img.list-pic").lazyload({
             threshold: 200,
             effect: "fadeIn",
             placeholder: "./image/product-loading.png",
         });
+        $("img.list-pic").removeClass("list-pic");
         $("img.programme-loading").lazyload({
             threshold: 200,
             effect: "fadeIn",
             placeholder: "./image/programme-loading.png",
         });
-
+        $("img.programme-loading").removeClass("programme-loading");
         // 产品
         var flag = true //设置标识。防止出现跑马灯
         $('.click-product').click(function () {

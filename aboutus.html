@@ -328,11 +328,13 @@
             effect:"fadeIn",
             placeholder:"./image/loading.jpg",              
         });
+        $("img.banner").removeClass("banner");
         $("img.knowloading").lazyload({
             threshold : 200,
             effect:"fadeIn",
             placeholder:"./image/knowloading.png",              
         });
+        $("img.knowloading").removeClass("knowloading");
         // 回到顶部
         $(window).scroll(function () {
             if ($(window).scrollTop() > 50) {
